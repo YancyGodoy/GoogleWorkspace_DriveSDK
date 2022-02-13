@@ -1,6 +1,4 @@
 from __future__ import print_function
-from email.message import EmailMessage
-from operator import truediv
 from googleapiclient.discovery import build
 from google.oauth2 import credentials, service_account
 
@@ -28,5 +26,4 @@ parameters = {
 }
 
 results = service.permissions().create(fileId=userfileID,body=parameters,transferOwnership=True).execute()
-
 print(results)
