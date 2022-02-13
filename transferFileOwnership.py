@@ -22,7 +22,7 @@ parameters = {
     'sendNotificationEmail': 'True', #Optional to send an email notification
     'emailMessage': 'You are the new owner of file X', #Optional Message to be sent to new owner if the above parameter is set to true
     'moveToNewOwnersRoot':'True',
-    'role': 'owner',  
+    'role': 'owner',  #role + type of grantee - > https://developers.google.com/drive/api/v3/reference/permissions/create#request-body
     'type': 'user',
     'emailAddress': 'newOwnerEmailAddress@yourdomain',
 }
