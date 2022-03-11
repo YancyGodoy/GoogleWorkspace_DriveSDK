@@ -1,5 +1,4 @@
 from __future__ import print_function
-import pickle
 import os.path
 from googleapiclient.http import MediaFileUpload
 from googleapiclient.discovery import build
@@ -13,6 +12,7 @@ SCOPES = ['https://www.googleapis.com/auth/drive']
 
 def main():
 
+    #Since we are impersonating a user, we need to get the Service Account credentials.
     SERVICE_ACCOUNT_FILE = 'drive.json'
     
     credentials = service_account.Credentials.from_service_account_file(
